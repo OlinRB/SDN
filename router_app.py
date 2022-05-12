@@ -1,9 +1,12 @@
 # Assignment link: http://ceskalka.w3.uvm.edu/265/sdn-assignment/
 
 import requests
+# Pip install library
+import os
+os.system("pip install dijkstar")
 from dijkstar import Graph, find_path
 import sys
-import os
+
 
 class Node:
 
@@ -61,8 +64,6 @@ def format_data(fw_table, all_links):
     return formatted_table
 
 def main():
-    # Pip install library
-    os.system("pip install dijkstar")
 
     # Get cmd line args
     send_location = sys.argv[1]
